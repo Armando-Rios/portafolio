@@ -39,13 +39,13 @@ window.addEventListener("resize", () => {
 
 //redimencion de la ventana segun usuario
 
-window.addEventListener("resize", () => {
-    const container = document.querySelector(".container");
-    const content = document.querySelector(".content");
-    const containerWidth = container.offsetWidth;
-    const newWidth = window.innerWidth;
-    if (containerWidth !== newWidth) {
-      container.style.width = `${newWidth}px`;
-      content.style.width = `${newWidth}px`;
-    }
-  });
+// window.addEventListener("resize", () => {
+//     const container = document.querySelector(".container");
+//     const content = document.querySelector(".content");
+//     const containerWidth = container.offsetWidth;
+//     const newWidth = window.innerWidth;
+//     if (containerWidth !== newWidth) {
+//       container.style.width = `${newWidth}px`;
+//       content.style.width = `${newWidth}px`;
+//     }
+//   });
