@@ -175,4 +175,13 @@ footer {
     footer {
         position: static;
     }
+    
+}
+@media screen and (max-height: 768px){
+    header {
+        height: 12vh;
+    }
+    .logo {
+        width: 100px;
+    }
 }
