@@ -1,0 +1,277 @@
+:root {
+    --main: rgb(214 2 31);
+    --last: rgb(122, 119, 119);
+}
+/* ========================= */
+/* |        Globals        | */
+/* ========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    width: 200px;
+    height: 45px;
+}
+
+textarea {
+    font-size: 20px;
+    color: brown;
+    padding: 20px;
+    outline: none;
+    resize: none;
+    border: none;
+}
+
+::placeholder {
+    color: var(--main);
+}
+
+body{
+    font-family: 'Segoe UI';
+    background-color: rgb(18, 18, 18);
+}
+
+/* ========================= */
+/* |        header         | */
+/* ========================= */
+header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.logo {
+    width: 140px;
+    height: 140px;
+    margin-left: 50px;
+}
+.links{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.links i{
+    font-size: 45px;
+    color: var(--main);
+}
+/* ========================= */
+/* |         main          | */
+/* ========================= */
+
+/* primera seccion */
+main {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 100%;
+}
+
+.section-first {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-first textarea{
+    background: rgba(0, 0, 0, 0.107);
+    border-radius: 15px;
+    width: 600px;
+    height: 600px;
+    font-size: 30px;
+}
+.button-container{
+    padding-top: 20px;
+}
+.section-first .primary {
+    background: var(--main);
+}
+.section-first .secondary {
+    background: var(--last);
+}
+
+/* segunda seccion */
+
+.resultado {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultado textarea{
+    background: rgba(0, 0, 0, 0.107);
+    border: none;
+    border-radius: 15px;
+    width: 400px;
+    height: 600px;
+    font-size: 30px;
+
+}
+
+.resultado button{
+    margin-top: 20px;
+    background: var(--last);
+    margin-top: 20px;
+    width: 220px;
+    height: 45px;
+}
+/* ========================= */
+/* |        Footer         | */
+/* ========================= */
+footer {
+    background-color: black;
+    color: var(--last);
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 15px;
+    justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+    .logo {
+        width: 130px;
+        height: 130px;
+    }
+    .links i{
+        font-size: 40px;
+    }
+    main {
+        grid-template-columns: 56% 44%;
+        margin-bottom: 20px;
+    }
+    button {
+        font-size: 16px;
+        width: 160px;
+        height: 40px;
+    }
+    .section-first textarea {
+        width: 400px;
+        height: 550px;
+        font-size: 25px;
+    }
+    .resultado textarea{
+        width: 300px;
+        height: 550px;
+        font-size: 25px;
+    
+    }
+    .resultado button{
+        width: 160px;
+        height: 40px;
+    }
+    footer{
+        background-color: black;
+        color: var(--last);
+        display: flex;
+        width: 100%;
+        position: static;
+        padding: 15px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .logo {
+        width: 120px;
+        height: 120px;
+    }
+    .links i{
+        font-size: 35px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        font-size: 16px;
+        width: 140px;
+        height: 35px;
+        border-radius: 10px;
+    }
+    .button-container{
+        margin-bottom: 20px;
+    }
+    .section-first textarea {
+        width: 500px;
+        height: 200px;
+    }
+    .resultado textarea{
+        width: 500px;
+        height: 200px;
+    
+    }
+    .resultado button{
+        width: 140px;
+        height: 35px;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .logo {
+        width: 100px;
+        height: 100px;
+        margin-left: 10px;
+    }
+    .links {
+        width: 150px;
+    }
+    .links i{
+        font-size: 30px;
+    }
+    ::placeholder {
+        font-size: 16px;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    button {
+        font-size: 12px;
+        width: 100px;
+        height: 30px;
+        border-radius: 8px;
+    }
+    .button-container{
+        margin-bottom: 20px;
+    }
+    .section-first textarea {
+        font-size: 15px;
+        width: 340px;
+        height: 200px;
+    }
+    .resultado textarea{
+        font-size: 15px;
+        width: 340px;
+        height: 200px;
+    
+    }
+    .resultado button{
+        width: 140px;
+        height: 35px;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    footer {
+        position: static;
+        bottom: 0;
+    }
+}
