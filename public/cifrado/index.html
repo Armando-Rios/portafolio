@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Encriptacion - Proyecto</title>
 </head>
@@ -11,26 +14,29 @@
     <header>
         <img class="logo" src="media/logo.png" alt="logo">
         <div class="links">
-            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href="https://github.com/Armando-Rios" target="_blank"><i class="fa-brands fa-github"></i></a>
             <a href=""><i class="fa-brands fa-linkedin"></i></a>
         </div>
     </header>
     <main>
-        <section class="section-first">
-                <textarea name="textarea" cols="30" rows="10" placeholder="Escribe el texto aqui..."></textarea>
-                <div class="button-container">
-                    <button class="primary">Encriptar!</button>
-                    <button class="secondary">Desencriptar!</button>
-                </div>
+        <section class="section-one section">
+            <textarea name="textarea" placeholder="Escribe el texto aqui..." id="entrada"></textarea>
+            <div class="button-container">
+                <button class="primary" id="primary">Encriptar!</button>
+                <button class="secondary" id="secondary">Desencriptar!</button>
+            </div>
         </section>
-        <section class="resultado">
-            <textarea name="textarea" placeholder="Resultado!"></textarea>
-            <button>Copiar</button>
+        <section class="section-two section">
+            <textarea name="textarea" placeholder="Resultado!" id="salida" readonly="readonly"></textarea>
+            <div class="button-container">
+                <button class="secondary" id="copy">Copiar</button>
+            </div>
         </section>
     </main>
     <footer>
         <p>© 2023 - By R105</p>
     </footer>
 </body>
+<script src="app.js"></script>
 <script src="https://kit.fontawesome.com/603f68a806.js" crossorigin="anonymous"></script>
 </html>
