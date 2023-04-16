@@ -47,7 +47,7 @@ p {
     grid-template-columns: 400px 400px;
     grid-template-rows: auto;
 }
-@media screen and (max-height: 800px){
+@media screen and (max-height: 850px){
     .logo {
         width: 180px;
     }
