@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>yugo</title>
+</head>
+<body>
+    <section class="game">
+        <div class="player borde1-2">
+            <h2>Player 1</h2>
+        </div>
+        <div class="yugo nashe">
+            <i class="fa-regular fa-hand-back-fist" id="piedra"></i>
+        </div>
+        <div class="yugo nashe">
+            <i class="fa-regular fa-hand" id="papel"></i>
+        </div>
+        <div class="yugo nashe borde">
+            <i class="fa-regular fa-hand-scissors" id="tijera"></i>
+        </div>
+        <div class="player borde2-2">
+            <h2>Player 2</h2>
+        </div>
+        <div class="yugo2 nashe">
+            <i class="fa-regular fa-hand-back-fist" id="piedra2"></i>
+        </div>
+        <div class="yugo2 nashe">
+            <i class="fa-regular fa-hand" id="papel2"></i>
+        </div>
+        <div class="yugo2 nashe borde2">
+            <i class="fa-regular fa-hand-scissors" id="tijera2"></i>
+        </div>
+    </section>
+    <section class="resultado">
+        <div class="player1 eleccion">
+            <i class="fa-regular fa-hand-back-fist op pi" id="p1piedra"></i>
+            <i class="fa-regular fa-hand op pi" id="p1papel"></i>
+            <i class="fa-regular fa-hand-scissors op pi" id="p1tijera"></i>
+        </div>
+        <div class="texto">
+            <h3>VS</h3>
+        </div>
+        <div class="player2 eleccion">
+            <i class="fa-regular fa-hand-back-fist op pi" id="p2piedra"></i>
+            <i class="fa-regular fa-hand op pi" id="p2papel"></i>
+            <i class="fa-regular fa-hand-scissors op pi" id="p2tijera"></i>
+        </div>
+        <div class="texto">
+            <h3>WIN</h3>
+        </div>
+        <div class="winer eleccion">
+            <i class="fa-regular fa-hand-back-fist op pi" id="piedrawin"></i>
+            <i class="fa-regular fa-hand op pi" id="papelwin"></i>
+            <i class="fa-regular fa-hand-scissors op pi" id="tijerawin"></i>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/603f68a806.js" crossorigin="anonymous"></script>
+</html>

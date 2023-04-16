@@ -14,7 +14,15 @@
       {
         "source": "**/*.html",
         "destination": "/$1"
-      }
+      },
+      {
+        "source": "/rock-paper-scissors/index.html",
+        "destination": "/rock-paper-scissors/"
+      },
+      {
+        "source": "/tictactoe/index.html",
+        "destination": "/tictactoe"
+      }           
     ]
   }
 }

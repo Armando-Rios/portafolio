@@ -1,0 +1,206 @@
+:root {
+    --fondo: rgb(161, 73, 73);
+    --letra: rgb(0, 0, 0);
+    --letrah: rgb(135, 126, 126);
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Hind', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background: var(--fondo);
+}
+header{
+    width: 1400px;
+    color: var(--fondo);
+    background-color: var(--letra);
+    margin: auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.title {
+    font-size: 30px;
+    margin-left: 40px;
+}
+.nav {
+    display: flex;
+    font-size: 30px;
+}
+.nav a {
+    color: var(--fondo);
+    margin-right: 40px;
+    text-decoration: none;
+}
+h2:hover {
+    color: var(--letrah);
+}
+a:hover {
+    color: var(--letrah);
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+
+}
+p {
+    font-weight: bold;
+}
+.game {
+    color: var(--letra);
+    width: 1200px;
+    margin: auto;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 10px solid var(--letra);
+    border-radius: 20px;
+}
+.player {
+    border: 10px solid var(--letra);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.yugo, .yugo2 {
+    border: 10px solid var(--letra);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+.borde {
+    border-radius: 0;
+}
+.borde2 {
+    border-radius: 0;
+}
+.borde1-2 {
+    border-radius: 0;
+}
+.borde2-2 {
+    border-radius: 0;
+}
+i {
+    background: var(--letrah);
+    padding: 50px;
+    border-radius: 50px;
+}
+.nashe i:hover {
+    color: var(--letrah);
+    background: var(--letra);
+}
+.activo {
+    color: var(--letrah);
+    background: var(--letra);
+    border: 10px solid var(--letrah);
+}
+h2:hover {
+    color: var(--letrah);
+}
+.resultado {
+    color: var(--letra);
+    width: 1200px;
+    height: 240px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.resultado .texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.eleccion, .winer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eleccion .op {
+    border: 7px solid var(--letra);
+    background: var(--letrah);
+    padding: 30px;
+    border-radius: 50px;
+    font-size: 80px;
+}
+.eleccion .pi{
+    display: none;
+}
+.eleccion .p1{
+    display: flex;
+}
+.eleccion .p2 {
+    display: flex;
+}
+.eleccion .win {
+    display: flex;
+    color: var(--letrah);
+    background: var(--letra);
+    border: 10px solid var(--letrah);
+}
+.resultado {
+    border: 20px solid var(--letra);
+    border-radius: 20px;
+}
+.eleccion:nth-child(1) {
+    border-radius: 20px 0 0 20px;
+}
+.winer {
+    border-radius: 0 20px 20px 0;
+}
+@media screen and (max-width: 400px) {
+    .game {
+        width: 350px;
+        height: 175px;
+        border: 5px solid var(--letra);
+        margin-bottom: 5px;
+    }
+    .player {
+        border: 5px solid var(--letra);
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .yugo, .yugo2 {
+        border: 5px solid var(--letra);
+        font-size: 30px;
+    }
+    i {
+        padding: 12px;
+        border-radius: 20px;
+    }
+    .activo {
+        border: 5px solid var(--letrah);
+    }
+    .resultado {
+        width: 350px;
+        height: 85.5px;
+    }
+    .resultado .texto {
+        font-size: 10px;
+    }
+    .eleccion .op {
+        border: 7px solid var(--letra);
+        padding: 10px;
+        border-radius: 20px;
+        font-size: 20px;
+    }
+    .eleccion .win {
+        border: 5px solid var(--letrah);
+    }
+    .resultado {
+        border: 10px solid var(--letra);
+    }
+}
